@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "moneymod",
+  "version": "${version}",
+  "name": "Money Mod (visual)",
+  "description": "Klawisz Y otwiera GUI z suwakiem. Podmienia wyświetlaną kwotę pieniędzy na scoreboardzie/tabie (tylko wizualnie, tylko u Ciebie).",
+  "authors": ["You"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.example.moneymod.client.MoneyModClient"]
+  },
+  "mixins": [
+    { "config": "moneymod.client.mixins.json", "environment": "client" }
+  ],
+  "depends": {
+    "fabricloader": ">=0.17.0",
+    "minecraft": "1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
